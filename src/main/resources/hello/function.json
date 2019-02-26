@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "..\\azure-test-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.temenos.microservice.test.azure.Function.hello",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "methods" : [ "GET", "POST" ],
+    "name" : "req",
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
